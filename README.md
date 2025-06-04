@@ -1,1 +1,1 @@
-https://github.com/Fomai/ono-tebe-nado
+https://github.com/Fomai/ono-tebe-nado-fd
