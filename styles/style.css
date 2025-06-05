@@ -37,16 +37,12 @@
   gap: 33px; /* расстояние между пунктами меню навигации */
 }
 
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
-
 .header__links-list-item {
   list-style: circle;
 }
 
-.header__link_active {
-  text-decoration: none; /* убираем подчеркаивание у активной ссылки */
+.header__links-list-item_no-bullit {
+  list-style: none;
 }
 
 .header__link {
@@ -55,15 +51,22 @@
   text-underline-offset: 4px; /* определеяем отступ подчеркивания */
 }
 
+.header__link_active {
+  text-decoration: none; /* убираем подчеркаивание у активной ссылки */
+}
+
 .header__address {
   justify-self: end; /* выравнивание адреса по правому краю */
+}
+
+.address {
   max-width: 240px;
   font-size: 18px;
   line-height: 135%;
   text-align: left;
 }
 
-.address {
+.address__link {
   text-decoration: underline;
   text-underline-offset: 4px; /* определеяем отступ подчеркивания */
 }
@@ -88,7 +91,7 @@
   position: absolute;
   inset: 0; /* растягиваем на весь экран || аналогично top: 0; left: 0; right: 0; bottom: 0; */
   z-index: 0; /* помещаем под контент */
-  opacity: 0.5; /* задаем прозрачность */
+  opacity: 0.6; /* задал прозрачность по макету */
   background-color: rgba(0, 0, 0, 0.829);
   pointer-events: none; /* отключаем любые события мыши */
 }
@@ -109,7 +112,6 @@
 
 .aligned-text {
   display: block;
-  text-align: left;
 }
 
 .letter-spacing-extended {
@@ -149,9 +151,9 @@
 }
 
 .bet-button {
-  border: 1px solid #fff;
-  padding: 12px 32px;
   color: #fff;
+  border: 1px solid currentColor; /* задаем цвет рамки */
+  padding: 12px 32px;
   font-weight: 500;
   font-size: 22px;
   line-height: normal;
@@ -200,27 +202,23 @@
   justify-content: space-between;
   height: 100%;
   padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   position: relative;
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   position: relative;
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   position: relative;
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -324,10 +322,6 @@
 
 .footer__address {
   justify-self: start; /* выравнивание адреса по левому краю */
-  max-width: 240px;
-  font-size: 18px;
-  line-height: 135%;
-  text-align: left;
 }
 
 .footer__menu {
@@ -352,11 +346,10 @@
 .footer__menu-link {
   text-decoration: underline; /* подчеркиваем ссылки */
   text-underline-offset: 4px; /* определеяем отступ подчеркивания */
-
 }
 
 .footer__menu-link_active {
-  list-style: none;
+  text-decoration: none; /* убираем подчеркивание у активной ссылки */
 }
 
 .footer__social-list {
